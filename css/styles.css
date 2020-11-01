@@ -1,3 +1,4 @@
+/*Global*/
 *{
     margin: 0;
     padding: 0;
@@ -7,37 +8,40 @@ body{
     background-color: #FFF;
     color: #000;
 }
+/*Header*/
 .header{
     height: 50px;
     margin: 0 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
-ol, ul{
-    height: 50px;
+.nav_ol{
+    height: inherit;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-content: center;
     align-content: center;
 }
-ol li{
+.ol_li{
     list-style: none;
     padding: 15px 8px;
 }
-.in_portfolio, .in_event, .in_contact{
+.li_portfolio, .li_event, .li_contact{
     color: #000;
     text-decoration: none;
     height: inherit;
     font-weight: 800;
 }
 /*Hero*/
-.hero {
-    height: 563px;
+.hero{
+    height: 95vh;
     color: #000;
     background-image: url('../images/background_1.svg');
-    background-size: auto;
+    background-size: 100vw;
     background-repeat: no-repeat;
     box-sizing: border-box;
     display: flex;
@@ -68,7 +72,7 @@ h4{
     font-size: 18px;
 }
 /*Portfolio*/
-.wrapper_portfolio{
+.portfolio{
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     width: 85%;
@@ -105,7 +109,7 @@ h4{
     text-transform: uppercase;
 }
 /*Event*/
-.wrapper_event{
+.event{
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     width: 85%;
@@ -118,7 +122,7 @@ h4{
     padding-top: 30px;
     text-transform: uppercase;
 }
-.event_flex{
+.event_wrapper{
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -133,12 +137,12 @@ h4{
     flex-direction: column;
     align-items: center;
 }
-.event_description{
+.event_imageContainer{
+    margin-bottom: 20px;
+}
+.event_article{
     text-align: center;
     margin-bottom: 30px;
-}
-.event_media{
-    margin-bottom: 20px;
 }
 .article_title{
     color: #12677c;
@@ -155,10 +159,8 @@ h4{
     border-radius: 10px;
 }
 /*Contact*/
-.wrapper_contact{
-    background-image: url('../images/background_1.svg');
-}
 .contact{
+    background-image: url('../images/background_1.svg');
     padding: 20px;
     height: 150px;
 }
@@ -167,24 +169,18 @@ h4{
     text-align: center;
 }
 .contact_flex{
+    height: inherit;
     display: flex;
     flex-shrink: 0;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.contact_info{
+.contact_form{
     padding: auto;
     height: inherit;
-}
-.ci_form{
     display: flex;
     flex-direction: column;
-}
-h6{
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: .7px;
 }
 input, button{
     margin: 4px;
@@ -196,13 +192,25 @@ button{
     color: #FFF;
     font-weight: 600;
     background: #000;
+    cursor: pointer;
 }
-.ssnn.github, .ssnn.twitter, .ssnn.linkedin{
+.contact_article{
+    padding: auto;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+h6{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .7px;
+}
+.image.github, .image.twitter, .image.linkedin{
     margin: 15px;
     width: 50px;
     height: 50px;
 }
-.ssnn.linkedin{
+.image.linkedin{
     width: 100px;
 }
 /*Footer*/
