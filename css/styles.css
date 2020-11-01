@@ -2,14 +2,12 @@
     margin: 0;
     padding: 0;
 }
-body
-{
+body{
     font-family: 'Lato', sans-serif;
     background-color: #FFF;
     color: #000;
 }
-.header
-{
+.header{
     height: 50px;
     margin: 0 15px;
     display: flex;
@@ -17,36 +15,25 @@ body
     align-items: center;
     align-content: center;
 }
-ol, ul
-{
+ol, ul{
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-content: center;
     align-content: center;
 }
-ol li
-{
+ol li{
     list-style: none;
     padding: 15px 8px;
 }
-.in_portfolio, .in_event, .in_contact
-{
+.in_portfolio, .in_event, .in_contact{
     color: #000;
     text-decoration: none;
     height: inherit;
     font-weight: 800;
 }
-
-
-
-
-
-
-
-
-.hero 
-{
+/*Hero*/
+.hero {
     height: 563px;
     color: #000;
     background-image: url('../images/background_1.svg');
@@ -57,62 +44,46 @@ ol li
     justify-content: flex-end;
     align-items: flex-end;
 }
-h1
-{
+h1{
     margin-right: 55px;
     font-size: 50px;
     text-align: right;
     line-height: 1.75em;
 }
-h1 strong
-{
+h1 strong{
     color: #FFF;
     text-transform: capitalize;
     font-style: oblique;
     font-size: 60px;
 }
-h1, h2, h3, h4, h5, h6
-{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
     font-weight: 600;
     letter-spacing: -.1px;
 }
-h3
-{
+h3{
     font-size: 30px;
 }
-h4
-{
+h4{
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
-.wrapper_portfolio
-{
+/*Portfolio*/
+.wrapper_portfolio{
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     width: 85%;
     margin: 0 auto;
     box-sizing: border-box;
 }
-.portfolio_title
-{
+.portfolio_title{
     margin: 30px;
     padding-top: 30px;
     text-transform: uppercase;
 }
-.portfolioInfo_title
-{
+.portfolioInfo_title{
     color: #12677c;
 }
-.portfolio_info
-{
+.portfolio_info{
     box-sizing: border-box;
     width: 85%;
     height: 275px;
@@ -121,31 +92,20 @@ h4
     justify-content: space-between;
     align-items: center;    
 }
-.description_title, .description_subtitle, .description_date, .description_url, .description_2
-{
+.description_title, .description_subtitle, .description_date, .description_url, .description_2{
     margin: 7.5px 0;
     text-align: start;
 }
-.description_title
-{
+.description_title{
     color: #12677c;
     text-transform: uppercase;
     font-size: 20px;
 }
-.description_date strong, .description_url strong
-{
+.description_date strong, .description_url strong{
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-.wrapper_event
-{
+/*Event*/
+.wrapper_event{
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     width: 85%;
@@ -153,22 +113,19 @@ h4
     margin-bottom: 30px;
     box-sizing: border-box;
 }
-.event_title
-{
+.event_title{
     margin: 30px;
     padding-top: 30px;
     text-transform: uppercase;
 }
-.event_flex
-{
+.event_flex{
     width: 85%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex: row;
 }
-.event_info
-{
+.event_info{
     width: 49.75%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -176,110 +133,80 @@ h4
     flex-direction: column;
     align-items: center;
 }
-.event_description
-{
+.event_description{
     text-align: center;
     margin-bottom: 30px;
 }
-.event_media
-{
+.event_media{
     margin-bottom: 20px;
 }
-.article_title
-{
+.article_title{
     color: #12677c;
 }
-.article_description
-{
+.article_description{
     padding: 20px;
     text-align: left;
 }
-.article_url
-{
+.article_url{
     padding: 10px 20px;
     color: #12677c;
     text-decoration: none;
     border: 1px solid #12677c;
     border-radius: 10px;
 }
-
-
-
-
-
-
-
-.wrapper_contact
-{
+/*Contact*/
+.wrapper_contact{
     background-image: url('../images/background_1.svg');
 }
-.contact
-{
+.contact{
     padding: 20px;
     height: 150px;
 }
-.contact_title
-{
+.contact_title{
     text-transform: uppercase;
     text-align: center;
 }
-.contact_flex
-{
+.contact_flex{
     display: flex;
     flex-shrink: 0;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.contact_info
-{
+.contact_info{
     padding: auto;
     height: inherit;
 }
-.ci_form
-{
+.ci_form{
     display: flex;
     flex-direction: column;
 }
-h6
-{
+h6{
     font-size: 18px;
     text-align: center;
     letter-spacing: .7px;
 }
-input, button
-{
+input, button{
     margin: 4px;
     border-color: grey;
     border-width: 1px;
     border-radius: 3px;
 }
-button
-{
+button{
     color: #FFF;
     font-weight: 600;
     background: #000;
 }
-.ssnn.github, .ssnn.twitter, .ssnn.linkedin
-{
+.ssnn.github, .ssnn.twitter, .ssnn.linkedin{
     margin: 15px;
     width: 50px;
     height: 50px;
 }
-.ssnn.linkedin
-{
+.ssnn.linkedin{
     width: 100px;
 }
-
-
-
-
-
-
-
-
-.footer
-{
+/*Footer*/
+.footer{
     height: 30px;
     display: flex;
     justify-content: space-between;
@@ -287,18 +214,15 @@ button
     padding-left: 30px;
     padding-right: 30px;
 }
-.footer_paragraph
-{
+.footer_paragraph{
     font-size: 18px;
     font-weight: 600;
 }
-.paragraph_name
-{
+.paragraph_name{
     color: #12677c;
     font-weight: 900;
 }
-.paragraph_passion
-{
+.paragraph_passion{
     color: #ff0000;
     font-weight: 900;
 }
