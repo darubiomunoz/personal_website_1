@@ -226,3 +226,7 @@ button{
     color: #ff0000;
     font-weight: 900;
 }
+/*Media Queries*/
+@media screen and (max-width: 1024px){
+    
+}
