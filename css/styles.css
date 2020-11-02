@@ -10,10 +10,10 @@ body{
 }
 /*Header*/
 .header{
-    width: 100vw;
     height: 10vh;
     margin: 0 15px;
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -239,5 +239,8 @@ h6{
 }
 /*Media Queries*/
 @media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 767px){
     
 }
