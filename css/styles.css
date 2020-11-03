@@ -166,6 +166,7 @@ h1 strong{
 }
 .article_description{
     margin: .9rem 0;
+    padding: 0 6rem;
     text-align: left;
 }
 .article_url{
@@ -255,7 +256,7 @@ h6{
     font-weight: 900;
 }
 /*Media Queries*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     /* Header*/
     .header{
         display: block;
@@ -270,25 +271,32 @@ h6{
     .ol_li{
         text-align: center;
         padding: .3rem;
+        font-size: 1rem;
+    }
+    .ol_li a{
+        font-size: .8em;
     }
     /*Hero*/
     .hero{
         height: auto;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h1 strong{
-        font-size: 1.75rem;
+        font-size: 2.25rem;
     }
     /*Portfolio*/
+    .portfolio_title{
+        font-size: 1.5rem;
+    }
     .portfolio_info{
         width: auto;
         display: block;
         margin: 0 auto;
     }
     .info_description{
-        font-size: 1rem;
+        font-size: .9rem;
         max-width: 80%;
         margin: 0 auto;
     }
@@ -311,29 +319,33 @@ h6{
         font-size: .9em;
     }
     .media_imageContainer{
-        max-width: 80%;
+        max-width: 70%;
         text-align: center;
         margin: 0 auto;
     }
     /*Event*/
+    .event_title{
+        font-size: 1.5rem;
+    }
     .event_wrapper{
         display: block;
         max-width: 100%;
     }
     .event_info{
+        font-size: 1rem;
         max-width: inherit;
     }
+    .event_imageContainer{
+        max-width: 70%;
+    }
     .event_article{
-        font-size: 1rem;
+        font-size: inherit;
     }
     .article_title{
         font-size: 1.5em;
     }
-    .event_imageContainer{
-        max-width: 80%;
-    }
     .article_description, .article_url{
-        font-size: .9em;
+        font-size: 1em;
     }
     /*Contact*/
     .contact_flex
@@ -366,28 +378,81 @@ h6{
         text-align: center;
     }
 }
-@media screen and (max-width: 424px){
-    /*Global*/
-    h2{
+@media screen and (max-width: 425px){
+     /*Header*/
+     .nav_ol{
+         font-size: 1rem;
+     }
+     .ol_li{
+        font-size: inherit;
+    }
+    .ol_li a{
+        font-size: .7em;
+    }
+    /*Hero*/
+    .hero{
         font-size: 1rem;
     }
-    h3{
-        font-size: .75rem;
+    .hero h1{
+        font-size: 1.3em;
+        margin-right: .7rem;
     }
-    h4, h5 , h6{
-        font-size: .5rem;
+    .hero h1 strong{
+        font-size: 1.5rem;
     }
     /*Portfolio*/
-    .info_description{
+    .portfolio_title{
         font-size: 1rem;
+        margin: .5rem;
     }
-
+    .portfolio_info{
+        font-size: .8rem;
+    }
+    .info_description{
+        font-size: inherit;
+    }
+    .description_title{
+        font-size: 1.5em;
+    }
+    .description_subtitle{
+        font-size: .8em;
+    }
+    .description_date{
+        font-size: .7em;
+    }
+    .description_url{
+        font-size: .7em;
+    }
+    .description_2{
+        font-size: .9em;
+    }
+    .media_imageContainer{
+        max-width: 80%;
+    }
+    /*Event*/
+    .event_title{
+        font-size: 1rem;
+        margin: .5rem;
+    }
+    .event_wrapper{
+        font-size: .8rem;
+    }
+    .event_info{
+        font-size: inherit;
+    }
+    .event_article{
+        font-size: inherit;
+    }
+    .article_title{
+        font-size: 1.5em;
+    }
+    .article_description, .article_url{
+        font-size: 1em;
+    }
     /*Contact*/
-    .contact_flex
-    {
-        font-size: .85rem;
+    .contact_flex{
+        font-size: .9rem;
     }
- 
     .image.github, .image.twitter, .image.linkedin{
         margin: .5rem;
         width: 2rem;
@@ -396,6 +461,7 @@ h6{
     .image.linkedin{
         width: 5.5rem;
     }
+    /*Footer*/
     .footer{
         display: block;
         text-align: center;
