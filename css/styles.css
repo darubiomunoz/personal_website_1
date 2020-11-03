@@ -8,6 +8,23 @@ body{
     background-color: #FFF;
     color: #000;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    letter-spacing: -.1px;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4, h5 , h6{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
 /*Header*/
 .header{
     height: 10vh;
@@ -50,8 +67,8 @@ body{
     align-items: flex-end;
 }
 h1{
-    margin-right: 55px;
-    font-size: 50px;
+    margin-right: 3rem;
+    font-size: 3rem;
     text-align: right;
     line-height: 1.75em;
 }
@@ -59,69 +76,63 @@ h1 strong{
     color: #FFF;
     text-transform: capitalize;
     font-style: oblique;
-    font-size: 60px;
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 600;
-    letter-spacing: -.1px;
-}
-h3{
-    font-size: 30px;
-}
-h4{
-    font-size: 18px;
+    font-size: 3.4rem;
 }
 /*Portfolio*/
 .portfolio{
     background-color: rgb(247, 247, 247);
-    border-radius: 10px;
-    max-width: 85%;
-    margin: 0 auto;
+    border-radius: 1rem;
+    max-width: 85vw;
+    margin: 1rem auto;
+    padding: 1rem;
     box-sizing: border-box;
 }
 .portfolio_title{
-    margin: 30px;
-    padding-top: 30px;
+    margin: 1rem;
     text-transform: uppercase;
 }
-.portfolioInfo_title{
-    color: #12677c;
-}
 .portfolio_info{
+    height: auto;
     box-sizing: border-box;
-    width: 85%;
-    height: 275px;
     margin: 0 auto;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;    
 }
+.info_description{
+    max-width: 50%;
+    box-sizing: border-box;
+}
 .description_title, .description_subtitle, .description_date, .description_url, .description_2{
-    margin: 7.5px 0;
+    margin: .5rem 0;
     text-align: start;
 }
 .description_title{
     color: #12677c;
     text-transform: uppercase;
-    font-size: 20px;
 }
 .description_date strong, .description_url strong{
     text-transform: uppercase;
 }
+.media_imageContainer{
+    max-width: 40%;
+}
+.media_image{
+    border-radius: 1rem;
+}
 /*Event*/
 .event{
     background-color: rgb(247, 247, 247);
-    border-radius: 10px;
+    border-radius: 1rem;
     max-width: 85%;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 1rem auto;
+    padding: 1rem;
     box-sizing: border-box;
 }
 .event_title{
-    margin: 30px;
-    padding-top: 30px;
+    margin: 1rem;
     text-transform: uppercase;
 }
 .event_wrapper{
@@ -131,39 +142,45 @@ h4{
     flex-wrap: wrap;
 }
 .event_info{
-    max-width: 49.75%;
-    margin: 0 auto;
+    max-width: 48%;
+    margin: 1% auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .event_imageContainer{
-    margin-bottom: 20px;
+    max-width: 80%;
+    padding: 1rem;
+}
+.event_image{
+    border-radius: 1rem;
 }
 .event_article{
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    margin-bottom: 30px;
 }
 .article_title{
     color: #12677c;
 }
 .article_description{
-    padding: 20px;
+    margin: .9rem 0;
     text-align: left;
 }
 .article_url{
-    padding: 10px 20px;
+    text-align: center;
+    padding: .25rem .5rem;
     color: #12677c;
     text-decoration: none;
-    border: 1px solid #12677c;
-    border-radius: 10px;
+    border: .1rem solid #12677c;
+    border-radius: 1rem;
 }
 /*Contact*/
 .contact{
     background-image: url('../images/background_1.svg');
-    padding: 20px;
-    height: 150px;
+    padding: 1rem;
+    height: auto;
 }
 .contact_title{
     text-transform: uppercase;
@@ -185,10 +202,10 @@ h4{
     flex-direction: column;
 }
 input, button{
-    margin: 4px;
+    margin: .25rem;
     border-color: grey;
-    border-width: 1px;
-    border-radius: 3px;
+    border-width: .1rem;
+    border-radius: .25rem;
 }
 button{
     color: #FFF;
@@ -203,30 +220,30 @@ button{
     flex-direction: column;
 }
 h6{
-    font-size: 18px;
     text-align: center;
     letter-spacing: .7px;
 }
 .image.github, .image.twitter, .image.linkedin{
-    margin: 15px;
-    width: 50px;
-    height: 50px;
+    margin: .5rem;
+    width: 3rem;
+    height: 3rem;
 }
 .image.linkedin{
-    width: 100px;
+    width: 7rem;
 }
 /*Footer*/
 .footer{
-    height: 30px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: .25rem 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .footer_paragraph{
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
 }
 .paragraph_name{
@@ -238,9 +255,151 @@ h6{
     font-weight: 900;
 }
 /*Media Queries*/
-@media screen and (max-width: 1024px){
-    
-}
 @media screen and (max-width: 767px){
-    
+    /* Header*/
+    .header{
+        display: block;
+        height: auto;
+    }
+    .nav_ol{
+        display: block;
+    }
+    .header_imageContainer{
+        text-align: center;
+    }
+    .ol_li{
+        text-align: center;
+        padding: .3rem;
+    }
+    /*Hero*/
+    .hero{
+        height: auto;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h1 strong{
+        font-size: 1.75rem;
+    }
+    /*Portfolio*/
+    .portfolio_info{
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .info_description{
+        font-size: 1rem;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .description_title, .description_subtitle, .description_date, .description_url, .description_2{
+        margin: .4rem 0;
+    }
+    .description_title{
+        font-size: 1.5em;
+    }
+    .description_subtitle{
+        font-size: .8em;
+    }
+    .description_date{
+        font-size: .7em;
+    }
+    .description_url{
+        font-size: .7em;
+    }
+    .description_2{
+        font-size: .9em;
+    }
+    .media_imageContainer{
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /*Event*/
+    .event_wrapper{
+        display: block;
+        max-width: 100%;
+    }
+    .event_info{
+        max-width: inherit;
+    }
+    .event_article{
+        font-size: 1rem;
+    }
+    .article_title{
+        font-size: 1.5em;
+    }
+    .event_imageContainer{
+        max-width: 80%;
+    }
+    .article_description, .article_url{
+        font-size: .9em;
+    }
+    /*Contact*/
+    .contact_flex
+    {
+        font-size: 1rem;
+    }
+    .contact_form{
+        font-size: inherit;
+        margin: .5rem 0;
+    }
+    .contact_flex h6{
+        font-size: .75em;
+    }
+    .contact_form input, .contact_form button{
+        font-size: .6em;
+    }
+    .contact_article{
+        margin: .5rem 0;
+    }
+    .image.github, .image.twitter, .image.linkedin{
+        margin: .5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .image.linkedin{
+        width: 6rem;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
 }
+@media screen and (max-width: 424px){
+    /*Global*/
+    h2{
+    font-size: 1rem;
+    }
+    h3{
+    font-size: .75rem;
+    }
+    h4, h5 , h6{
+    font-size: .5rem;
+    }
+    /*Portfolio*/
+    .info_description{
+        font-size: 1rem;
+    }
+
+    /*Contact*/
+    .contact_flex
+    {
+        font-size: .85rem;
+    }
+ 
+    .image.github, .image.twitter, .image.linkedin{
+        margin: .5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .image.linkedin{
+        width: 5.5rem;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer_paragraph{
+        font-size: .75rem;
+    }
