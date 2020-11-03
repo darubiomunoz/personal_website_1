@@ -369,13 +369,13 @@ h6{
 @media screen and (max-width: 424px){
     /*Global*/
     h2{
-    font-size: 1rem;
+        font-size: 1rem;
     }
     h3{
-    font-size: .75rem;
+        font-size: .75rem;
     }
     h4, h5 , h6{
-    font-size: .5rem;
+        font-size: .5rem;
     }
     /*Portfolio*/
     .info_description{
@@ -403,3 +403,4 @@ h6{
     .footer_paragraph{
         font-size: .75rem;
     }
+}
