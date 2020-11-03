@@ -43,7 +43,7 @@ a{
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak-as: never;
+    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -73,6 +73,21 @@ a{
     content: "\e903";
     color: #1da1f2;
   }
+  /*Burger button*/
+  .burger-button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    line-height: 2rem;
+    text-align: center;
+    position: fixed;
+    top: .5rem;
+    left: .5rem;
+    z-index: 3;
+}
 /*Header*/
 .header{
     height: 10vh;
@@ -339,6 +354,10 @@ article .article_imageContainer{
 }
 /*Media Queries*/
 @media screen and (max-width: 768px){
+    /*Burger Button*/
+    .burger-button{
+        display: block;
+    }
     /* Header*/
     .header{
         display: block;
@@ -350,13 +369,33 @@ article .article_imageContainer{
     .header_imageContainer{
         text-align: center;
     }
+    .nav{
+        background-color: rgba(255, 255, 255, .923);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .45s;
+    }
+    .nav.active{
+        left: 0;
+    }
+    .nav_ol{
+        height: auto;
+    }
     .ol_li{
         text-align: center;
-        padding: .3rem;
-        font-size: 1rem;
+        padding: 1rem;
+        font-size: 2.5rem;
     }
     .ol_li a{
-        font-size: .8em;
+        font-size: 1em;
+        text-decoration: underline;
     }
     /*Hero*/
     .hero{
@@ -460,12 +499,16 @@ article .article_imageContainer{
     }
 }
 @media screen and (max-width: 425px){
-     /*Header*/
-     .nav_ol{
+    /*Burger Button*/
+    .burger-button{
+       display: block;
+    }
+    /*Header*/
+    .nav_ol{
          font-size: 1rem;
-     }
+    }
      .ol_li{
-        font-size: inherit;
+        font-size: 1.7rem;
     }
     .ol_li a{
         font-size: .7em;
